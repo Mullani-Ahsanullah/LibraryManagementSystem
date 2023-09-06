@@ -1,0 +1,26 @@
+<div style="height: 50px;margin-top: 17px;opacity: 80%;margin-bottom: 20px;border-radius: 5px;"></div>
+<div class="col-md-6 offset-md-3">
+    <h3 style="color: #150e21;margin-top: 20px;">Enter Author Details</h3>
+    <form (ngSubmit) = "onSubmit()">
+    
+        <div class="form-group">
+            <label style="font-weight: bold; margin-bottom: 10px;"> Author Name</label>
+            <input type="text" class ="form-control" id = "authorName"
+                [(ngModel)] = "author.authorName" name = "authorName" placeholder="Enter Author Name">
+        </div>
+        
+        <div class="form-group">
+            <label style="font-weight: bold;margin-bottom: 10px;margin-top: 10px;"> Author Email</label>
+            <input type="text" class ="form-control" id = "authorEmail"
+                [(ngModel)] = "author.authorEmail" name = "authorEmail"placeholder= "Enter Author Email">
+        </div>
+        
+        <div class="form-group">
+            <label style="font-weight: bold;margin-bottom: 10px;margin-top: 10px;">Author Country</label>
+            <input type="text" class ="form-control" id = "authorCountry"
+            [(ngModel)] = "author.authorCountry" name = "Author Country" placeholder="Enter Author Country">
+        </div>
+        <button class = "btn btn-success" type ="submit" style="margin-top:20px">Submit</button>
+        <div class="container"><button class="btn btn-sm btn-outline-secondary" style="float:right;margin-bottom:30px" (click)="goToAuthorList()">Back</button></div>
+    </form>
+    </div> 

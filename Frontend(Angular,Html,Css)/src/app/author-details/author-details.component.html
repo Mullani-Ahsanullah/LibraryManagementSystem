@@ -1,0 +1,15 @@
+<div style="height: 50px;margin-top: 17px;opacity: 80%;margin-bottom: 20px;border-radius: 5px;"></div>
+<div class="container" style="align-items: center;text-align: center;"><h3 style="color: #150e21;align-content: center;font-weight: bolder;align-items: center;">Author Details</h3></div>
+
+<div class="container group d-flex justify-content-center" style="margin-bottom: 50px;margin-top: 30px;">
+    <div class="grid-1-5" style="width:fit-content;height: fit-content;">
+        <h3><span class="uppercase" style="font-size: large;margin:20px"><label> <b> Author Name: </b></label> {{author.authorName}}</span></h3>
+        <ul style="color: rgb(38, 41, 43);font-size: large;margin:30px;">
+            <li style="list-style: disc;margin:10px"><label> <b> Author Email: </b></label> {{author.authorEmail}}</li>
+            <li style="list-style: disc;margin:10px"><label> <b> Author Country:</b></label> {{author.authorCountry}}</li>
+        </ul>
+        <div style="margin:30px;text-align: center;">
+          <button (click) = "updateAuthor(author.id)" type="button" class="btn btn-outline-primary">Edit Details</button>
+        </div>
+    </div>  
+</div>

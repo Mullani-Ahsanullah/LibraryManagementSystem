@@ -1,0 +1,36 @@
+<div style="height: 50px;margin-top: 17px;opacity: 80%;margin-bottom: 20px;border-radius: 5px;"></div>
+<div class="container justify-content-center" style="margin:30px;margin-left: 80px;">
+     <div class="row">
+        <div class="col-md-offset-1 col-md-10">
+            <div class="panel">
+                <div class="panel-heading">
+                    <div class="row">
+                        <div class="col col-sm-3 col-xs-12">
+                            <h4 class="title">Subscribers <span>List</span></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-body table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>User Id</th>
+                                <th>User Name</th>
+                                <!-- <th>date</th> -->
+                                <th>User Email</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let data_user of user">
+                                <td>{{data_user.userID}}</td>
+                                <td>{{data_user.userName}}</td>
+                                <!-- <td>{{data_user.date}}</td> -->
+                                <td>{{data_user.userEmail}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div> 
+            </div>
+        </div>               
+     </div>    
+</div> 

@@ -1,0 +1,30 @@
+<div style="height: 50px;margin-top: 17px;opacity: 80%;margin-bottom: 20px;border-radius: 5px;"></div>
+
+<div class="col-md-6 offset-md-3">
+    
+    <h3> Update Author Details</h3>
+   
+    <form (ngSubmit) = "onSubmit()">
+    
+        <div class="form-group" style="margin:15px">
+            <label> Author Name</label>
+            <input type="text" class ="form-control" id = "authorName"
+                [(ngModel)] = "author.authorName" name = "authorName">
+        </div>
+        
+        <div class="form-group"  style="margin:15px">
+            <label> Author Email</label>
+            <input type="text" class ="form-control" id = "authorEmail"
+                [(ngModel)] = "author.authorEmail" name = "authorEmail">
+        </div>
+        <div class="form-group"  style="margin:15px">
+            <label> Author Country</label>
+            <input type="text" class ="form-control" id = "authorCountry"
+                [(ngModel)] = "author.authorCountry" name = "authorCountry">
+        </div>
+
+        <button class = "btn btn-success" type ="submit" style="margin:20px">Submit</button>
+    
+    </form>
+
+</div>
